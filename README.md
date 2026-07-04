@@ -51,6 +51,8 @@ Tool-agnostic version: [docs/GK-PRINCIPLES.md](docs/GK-PRINCIPLES.md)
 1. **Install the spine** — from your repo root:
    ```bash
    npx gk-stack init          # copies CLAUDE.md template + .claude/ into this repo
+   # or, via Homebrew:
+   brew install gkganesh12/tap/gk-stack && gk-stack init
    ```
    (or copy `starter/` contents manually). That's the whole spine: a `CLAUDE.md`
    template, `settings.json` (permissions + format hook + `opusplan`), `/ship`,
