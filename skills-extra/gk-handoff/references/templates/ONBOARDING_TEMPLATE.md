@@ -8,7 +8,7 @@ Get a new developer from zero to running in under 30 minutes.
 ```markdown
 # Developer Onboarding — [Project Name]
 **For:** [Developer name / role]
-**Prepared by:** [outgoing developer / BetaCraft]
+**Prepared by:** [outgoing developer / delivering team]
 **Date:** [date]
 **Estimated setup time:** 20-30 minutes
 
@@ -148,7 +148,7 @@ Read `gk/handoff/[date]/ACTIVE_CONTEXT.md` for where things stand right now.
 | Role | Name | Contact | For |
 |------|------|---------|-----|
 | [PM] | [Mayuresh] | [contact] | Project questions, scope |
-| [Tech lead] | [Aakash] | [contact] | Architecture decisions |
+| [Tech lead] | [name] | [contact] | Architecture decisions |
 | [Client] | [name] | [contact] | Business context |
 
 ---
@@ -168,7 +168,7 @@ Read `gk/handoff/[date]/ACTIVE_CONTEXT.md` for where things stand right now.
 # CONTEXT_DUMP_TEMPLATE.md
 
 Used by gk-handoff Step 3 for internal handoff (CONTEXT_DUMP.md).
-Honest brain dump from one BetaCraft dev to another.
+Honest brain dump from one dev to another.
 
 ---
 

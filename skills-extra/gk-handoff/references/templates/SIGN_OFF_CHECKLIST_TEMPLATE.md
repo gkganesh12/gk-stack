@@ -11,12 +11,12 @@ with the client. Fill every section from project data.
 ## [Project Name] — [Milestone / Project Completion]
 **Date:** [date]
 **Client:** [client name / company]
-**BetaCraft contact:** [PM name]
+**Delivering-team contact:** [PM name]
 **Review type:** [Milestone Phase N sign-off / Full project delivery]
 
 ---
 
-> This checklist is reviewed together on a call between BetaCraft and [client].
+> This checklist is reviewed together on a call between the delivering team and [client].
 > Each item is confirmed as complete before the client signs off on this milestone.
 > Items marked ❌ are documented in KNOWN_ISSUES.md and acknowledged below.
 
@@ -130,7 +130,7 @@ Role: ___________________________
 Date: ___________________________
 Method: [Reply to delivery email / Electronic signature / Verbal on call — recorded]
 
-**BetaCraft:**
+**Delivering team:**
 Name: [PM name]
 Date: [date]
 

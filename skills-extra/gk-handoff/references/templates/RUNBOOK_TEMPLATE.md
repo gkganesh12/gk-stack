@@ -9,7 +9,7 @@ No assumed knowledge. Exact commands. What to do when things go wrong.
 ```markdown
 # Operations Runbook — [Project Name]
 **For:** [Client company] dev team
-**Prepared by:** BetaCraft
+**Prepared by:** [delivering team]
 **Date:** [date]
 **Last updated:** [date]
 
@@ -90,7 +90,7 @@ git push origin main
 - [ ] Log the incident in [issue tracker / Slack]
 
 **After rollback:** Investigate what caused the failure before re-deploying.
-Contact BetaCraft if root cause is unclear (see ESCALATION.md).
+Contact the delivering team if root cause is unclear (see ESCALATION.md).
 
 ---
 
@@ -121,7 +121,7 @@ npx prisma migrate status
 # If a migration is in "Failed" state:
 # Do NOT run more migrations
 # Restore from backup if data was affected
-# Contact BetaCraft immediately (see ESCALATION.md)
+# Contact the delivering team immediately (see ESCALATION.md)
 ```
 
 ---
@@ -168,7 +168,7 @@ npx prisma migrate status
 |--------|--------|-----------|--------|
 | Error rate | < 0.1% | > 1% | Check Sentry, consider rollback |
 | API response time | < 500ms | > 2000ms | Check DB queries, check AI API |
-| Database connections | < 80% of pool | > 90% | Contact BetaCraft |
+| Database connections | < 80% of pool | > 90% | Contact delivering team |
 | Deployment success rate | 100% | < 100% | Review deployment logs |
 
 ---
@@ -186,6 +186,6 @@ npx prisma migrate status
 
 ---
 
-*Prepared by BetaCraft · [date]*
+*Prepared by [delivering team] · [date]*
 *Questions? See ESCALATION.md*
 ```

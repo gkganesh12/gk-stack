@@ -45,7 +45,7 @@ DOC_META = {
     "SYSTEM_OVERVIEW.md":    ("System Overview",         "What runs where, how it fits together",      "maintenance"),
     "RUNBOOK.md":            ("Runbook",                 "Common operations, deployments, rollbacks",  "maintenance"),
     "MONITORING.md":         ("Monitoring",              "What to watch, alerts, thresholds",          "maintenance"),
-    "ESCALATION.md":         ("Escalation",              "When to call BetaCraft, what to send",       "maintenance"),
+    "ESCALATION.md":         ("Escalation",              "When to call the delivering team, what to send",       "maintenance"),
 }
 
 # Preferred display order per mode
@@ -538,7 +538,7 @@ def generate_html(docs, folder, mode, project_name, generated_at):
       {nav_items_html}
     </div>
   </nav>
-  <div class="sidebar-foot">Prepared by BetaCraft</div>
+  <div class="sidebar-foot">Prepared by the delivery team</div>
 </aside>
 
 <div class="topbar">
@@ -554,7 +554,7 @@ def generate_html(docs, folder, mode, project_name, generated_at):
   <div class="hero">
     <div class="hero-tag">{mode.title()} Handoff Package</div>
     <h1 class="hero-title">{project_name}</h1>
-    <p class="hero-desc">{doc_count} document{'s' if doc_count != 1 else ''} · {mode.title()} package · Prepared by BetaCraft</p>
+    <p class="hero-desc">{doc_count} document{'s' if doc_count != 1 else ''} · {mode.title()} package · Prepared by the delivery team</p>
     <div class="hero-meta">
       <div class="meta-item">
         <div class="meta-label">Package</div>

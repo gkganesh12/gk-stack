@@ -8,7 +8,7 @@ Fill from BRIEF.md, SPEC.md, DECISIONS.md.
 
 ```markdown
 # [Project Name] — Delivery Summary
-**Prepared by:** BetaCraft
+**Prepared by:** [delivering team]
 **Delivered to:** [Client name]
 **Date:** [date]
 **Delivery type:** [Phase [N] completion / Full project delivery]
@@ -116,6 +116,6 @@ in SUPPORT.md. If you'd like to add features or make changes, contact
 
 ---
 
-*Prepared by [BetaCraft PM] · [date]*
+*Prepared by [PM name] · [date]*
 *Full technical documentation available on request.*
 ```

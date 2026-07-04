@@ -32,7 +32,7 @@ Each package produces:
 | `handoff: client` | Project completion | Client stakeholder (non-technical) |
 | `handoff: milestone` | Phase sign-off | Client stakeholder + PM |
 | `handoff: dev` | New developer joining | Developer taking over |
-| `handoff: internal` | Dhiraj → Deepak (or similar) | BetaCraft developer |
+| `handoff: internal` | developer → developer | teammate |
 | `handoff: maintenance` | Handing to client's dev team | Client's technical team |
 
 ---
@@ -43,7 +43,7 @@ Each package produces:
 - `handoff: client` → full project completion package
 - `handoff: milestone` → phase-specific package (which phase? read TASKS.md)
 - `handoff: dev` → developer onboarding package
-- `handoff: internal` → internal BetaCraft dev handoff
+- `handoff: internal` → internal dev-to-dev handoff
 - `handoff: maintenance` → client maintenance team package
 
 **If no mode specified:**
@@ -51,7 +51,7 @@ Each package produces:
 > · `handoff: client` — project complete, delivering to client
 > · `handoff: milestone` — end of a phase, client sign-off
 > · `handoff: dev` — new developer joining the project
-> · `handoff: internal` — handing between BetaCraft team members
+> · `handoff: internal` — handing between your own team members
 > · `handoff: maintenance` — handing to client's own dev team"
 
 Wait for answer.
@@ -144,7 +144,7 @@ gk/handoff/dev-[date]/
 └── index.html            ← portal (generated in Step 4b)
 ```
 
-**`handoff: internal` — BetaCraft team handoff**
+**`handoff: internal` — internal team handoff**
 ```
 gk/handoff/internal-[date]/
 ├── CONTEXT_DUMP.md       ← complete state for the receiving dev
@@ -163,7 +163,7 @@ gk/handoff/maintenance-[date]/
 ├── KNOWN_ISSUES.md       ← bugs and limitations to be aware of
 ├── CREDENTIALS.md        ← placeholder list
 ├── ARCHITECTURE_GUIDE.md ← how the system is built
-├── ESCALATION.md         ← when to call BetaCraft, what to send
+├── ESCALATION.md         ← when to call the delivering team, what to send
 └── index.html            ← portal (generated in Step 4b)
 ```
 
