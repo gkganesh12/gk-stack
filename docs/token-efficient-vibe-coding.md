@@ -178,4 +178,4 @@ The developers with small bills aren't using AI less. They're just not paying fl
 
 ---
 
-*Pricing sourced from Anthropic's official pricing documentation, July 2026. Verify current rates at [claude.com/pricing](https://claude.com/pricing) and [platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing). Claude Code docs: [docs.claude.com/en/docs/claude-code/overview](https://docs.claude.com/en/docs/claude-code/overview).*
+*Pricing sourced from Anthropic's official pricing documentation, July 2026. Verify current rates at [claude.com/pricing](https://claude.com/pricing) and [platform.claude.com/docs/en/about-claude/pricing](https://platform.claude.com/docs/en/about-claude/pricing). Claude Code docs: [code.claude.com/docs/en/overview](https://code.claude.com/docs/en/overview).*
