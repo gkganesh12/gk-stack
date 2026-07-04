@@ -10,7 +10,8 @@ target was an upstream repo we don't own. `/ship` demonstrated everything up to 
 remote boundary (conventional commit on a branch, never main), then stopped and asked
 the human — which is itself correct behavior. Opening real draft PRs against someone
 else's OSS project as a demo would be spam regardless of permissions.
-**Status:** blocked on fork + push sign-off; completable in one short session after.
+**Status:** RESOLVED 2026-07-04 — fork sign-off granted; both boxes completed against
+gkganesh12/hono with zero upstream contact ([FORK-RUN.md](FORK-RUN.md)).
 **Proposed amendment:** R3/R4 should say "PR opens via `gh` against the team's
 designated remote" and note that bootstrap runs on third-party repos must target a
 fork — the criterion as written silently assumes origin is writable.
@@ -41,10 +42,11 @@ Flagged pre-run as a risk; resolved against current official docs: `opusplan` is
 documented model alias and the `model` setting accepts aliases. Criterion stands as
 written. (Kept here so the pre-run flag has a recorded resolution.)
 
-## D5 — R3 "unrelated staged changes trigger a question" — untested
+## D5 — R3 "unrelated staged changes trigger a question" — RESOLVED
 
-**What happened:** demo scope didn't stage unrelated changes. Honest gap, not a
-criterion defect; one extra scratch-branch session closes it.
+**What happened:** initially untested (honest gap, not a criterion defect). Closed in
+the fork run: /ship verified green, then stopped with a three-option question and
+created no commit ([FORK-RUN.md](FORK-RUN.md) §3).
 
 ## Process notes worth keeping
 

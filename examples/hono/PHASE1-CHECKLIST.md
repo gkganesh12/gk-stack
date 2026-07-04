@@ -28,13 +28,13 @@ Boxes are checked only where the acceptance criterion was demonstrated as writte
 ## R3 — Ship command (/ship)
 
 - [x] Failing test ⇒ no commit, failure reported — **demonstrated with full commit permissions granted**, so refusal was the command's discipline, not a sandbox artifact; HEAD unchanged after the session ([SHIP-REFUSAL-TRANSCRIPT.md](SHIP-REFUSAL-TRANSCRIPT.md)); scratch branch deleted after
-- [~] Passing verification ⇒ conventional commit on a branch (never main) — demonstrated (`d29c0de docs: record learned rule...` on `gk/scratch-ship-demo`); **PR-via-gh half of this box blocked on fork + push sign-off** ([DEVIATIONS.md](DEVIATIONS.md) D1); /ship correctly stopped at the remote boundary and asked the human
-- [ ] Unrelated staged changes trigger a question — not staged in this run; untested (D5)
+- [x] Passing verification ⇒ conventional commit on a branch (never main), PR opens via gh, only the link returned — completed on the fork after sign-off: commit `bc196af`, [PR #1 against gkganesh12/hono main](https://github.com/gkganesh12/hono/pull/1) ([FORK-RUN.md](FORK-RUN.md) §2; demo PR closed after capture)
+- [x] Unrelated staged changes trigger a question — demonstrated on the fork: /ship verified green, then stopped with a three-option question, no commit created ([FORK-RUN.md](FORK-RUN.md) §3)
 
 ## R4 — Triage command (/triage)
 
 - [x] Degrades gracefully read-only — run against live upstream with read-only gh tools; digest classified real CI runs, issues, and PRs, marked P2 fixes SKIPPED (read-only mode), and listed sources it could not fully reach ([TRIAGE-DIGEST.md](TRIAGE-DIGEST.md))
-- [ ] P2 fixes as draft PRs from worktrees — blocked on fork + push sign-off (D1)
+- [x] P2 fixes as draft PRs from worktrees — completed on the fork: one lint chore fixed in worktree branch `gk-proof/triage-language-lint`, verified (4,580 tests), [draft PR #2 against fork main](https://github.com/gkganesh12/hono/pull/2) ([FORK-RUN.md](FORK-RUN.md) §4; demo PR closed after capture)
 - [x] Security-related findings report-only — no security findings surfaced in this run; rule encoded in the command text (step 6)
 - [ ] Two-strike flag-and-abandon — not demonstrable on demand; policy encoded in command text (step 4); criterion rewording proposed (D2)
 - [x] Single digest, severity-ordered P0→noise, items linked — verified in TRIAGE-DIGEST.md
@@ -49,4 +49,4 @@ Boxes are checked only where the acceptance criterion was demonstrated as writte
 - [x] Verification exits non-zero when a test is deliberately broken, zero when restored — broken: exit 1 (`Tests 1 failed | 4579 passed`); restored: exit 0; scratch branch cleaned up
 - [x] UI clause — N/A stated explicitly in CLAUDE.md: library with no UI; "types + tests are the entire verification story"
 
-**Score: 15 of 18 boxes checked as written; 3 blocked or reworded — every one flagged, none silently adapted.**
+**Score after the fork run: 17 of 18 boxes checked as written. The one remaining (R4 two-strike) is a policy property, not demonstrable on demand — rewording proposed in [DEVIATIONS.md](DEVIATIONS.md) D2. Every deviation flagged, none silently adapted.**
