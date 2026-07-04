@@ -7,7 +7,7 @@ batteries-included starter kit with the curated skill library already installed.
 ## What's inside
 
 ```
-gk-stack-v1.1/
+gk-stack/                              # repo root — version lives in git tags
 ├── docs/
 │   ├── GK-STACK.md                    # The method — 7 layers, grounded in Anthropic team,
 │   │                                  #   Boris Cherny, and community sources
