@@ -124,11 +124,11 @@ One-invocation wrapper for the learned-rule ritual (prompt P3): append a single 
 Acceptance criteria:
 - [ ] Appends exactly one line per invocation; never edits other sections; rejects prose >1 line
 
-**R15 — Skill library integration (vibe-* pack, large-codebase set)**
-Install the curated subset of the vibe-* framework (Aakash Dhar / BetaCraft) that serves large, complex codebases, and resolve overlaps with GK-Stack primitives so the two systems don't fight.
+**R15 — Skill library integration (vibe-* driver library, large-codebase set)**
+Install, per observed pain, skills from the first-party vibe-* driver library — bundled in this repo's `skills-library/` (curated seven) and `vibe-skills-extra/` (the rest) — and resolve overlaps with GK-Stack primitives so the two systems don't fight. The starter spine deliberately ships only `gk-reviewer`; drivers are pulled in when their pain shows up, not preinstalled.
 Curated set: `vibe-init` (legacy onboarding — generates grounding docs from observed code only), `vibe-graph` (dependency graph with confidence tags + god nodes; feeds context slicing), `vibe-parallel` (wave-based subagent execution with conflict detection), `vibe-fix-bug`, `vibe-test` (blast-radius-aware), `vibe-perf`, `vibe-doctor`. Optional per team taste: `vibe-brainstorm`, `vibe-architect`, `vibe-document`, `vibe-changelog`.
 Acceptance criteria:
-- [ ] Curated skills installed under `.claude/skills/` (or `~/.claude/skills/` per team policy) and listed in CLAUDE.md with one-line "when to use" each
+- [ ] Needed skills copied from `skills-library/` into `.claude/skills/` (or `~/.claude/skills/` per team policy) and listed in CLAUDE.md with one-line "when to use" each
 - [ ] **Exactly one review gate:** either `gk-reviewer` or `vibe-review` is active, not both — the choice and rationale recorded in Learned Rules
 - [ ] **Exactly one grounding authority:** if `vibe-init` generates its `vibe/` folder, CLAUDE.md references it as the deep index and stays the ≤200-line entry point (no duplicated conventions)
 - [ ] Trigger-collision pass done: skill descriptions checked so no two skills claim the same trigger phrases; conflicts resolved by editing descriptions

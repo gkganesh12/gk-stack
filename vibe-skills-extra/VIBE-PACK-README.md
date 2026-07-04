@@ -1,8 +1,8 @@
 # vibe-* skills
 
-> A framework of 27 Claude Code skills that covers the complete software development lifecycle — from first idea to client sign-off.
+> A framework of 26 Claude Code skills that covers the complete software development lifecycle — from first idea to client sign-off.
 
-Built by **Aakash Dhar** at [BetaCraft](https://betacraft.in) for production AI-assisted development workflows.
+Built by **Ganesh Khetawat & Aakash Dhar** at [BetaCraft](https://betacraft.in) for production AI-assisted development workflows — the same team behind the GK-Stack method.
 
 ---
 
@@ -613,7 +613,7 @@ Client documents are plain English — no task IDs, no framework names, no file 
 
 ## Contributing
 
-Built and maintained by **Aakash Dhar** ([@aakashdhar](https://github.com/aakashdhar)) at [BetaCraft](https://betacraft.in).
+Built and maintained by **Ganesh Khetawat & Aakash Dhar** ([@aakashdhar](https://github.com/aakashdhar)) at [BetaCraft](https://betacraft.in).
 
 Issues, suggestions, and skill contributions welcome — skills are just markdown files with a consistent structure. Open a PR with your skill in its own folder following the existing naming convention.
 

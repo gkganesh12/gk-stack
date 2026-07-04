@@ -55,9 +55,10 @@ gk-stack/                              # repo root — version lives in git tags
 
 ## Attribution & sources
 
-- vibe-* skill framework by **Aakash Dhar (BetaCraft)** — original pack README
+- GK-Stack method and vibe-* skill library by **Ganesh Khetawat & Aakash Dhar** —
+  one team ships both the method and the driver library. Original pack README
   preserved at `vibe-skills-extra/VIBE-PACK-README.md`.
-- GK-Stack method distilled from Anthropic's published team playbook and
+- The method is distilled from Anthropic's published team playbook and
   best-practices docs, Boris Cherny's workflow, Simon Willison's agentic
   patterns, and community consensus — full source list in docs/GK-STACK.md.
 
