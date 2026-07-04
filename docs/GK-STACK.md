@@ -145,22 +145,23 @@ After a month you're not "using AI" — you're running a system that gets smarte
 
 ## The starter kit
 
-GK-Stack ships as files, not just advice. The companion `gk-stack-starter.zip` contains a drop-in `.claude/` setup:
+GK-Stack ships as files, not just advice. The `starter/` folder in this repo is the drop-in spine:
 
 ```
-gk-stack-starter/
+starter/
 ├── README.md                          # install + customize guide
 ├── CLAUDE.md                          # grounding file template (G + K)
 └── .claude/
     ├── settings.json                  # permissions + format hook (A + K)
     ├── commands/
-    │   └── ship.md                    # verify → commit → push → PR (A + T)
+    │   ├── ship.md                    # /ship — verify → commit → push → PR (A + T)
+    │   └── triage.md                  # /triage — classify repo noise, digest for humans (A)
     └── skills/
         └── gk-reviewer/
             └── SKILL.md               # fresh-eyes review skill (T)
 ```
 
-Copy it into a repo, fill in the placeholders, and you're running the stack in ten minutes.
+Copy it into a repo, fill in the placeholders, and you're running the stack in ten minutes. When a specific pain shows up — legacy onboarding, oversized context, parallel work — pull the matching driver from `skills-library/`.
 
 ---
 
@@ -173,4 +174,4 @@ Copy it into a repo, fill in the placeholders, and you're running the stack in t
 - **Karpathy: vibe coding → agentic engineering** — via Towards Data Science, "From Vibe Coding to Spec-Driven Development" (May 2026)
 - **Community consensus** — r/vibecoding, r/ClaudeAI, Hacker News threads; secure-vibe-coding research (Medium, June 2026); "workflows that actually ship" (DEV, March 2026)
 
-*GK-Stack v1.0 — compiled July 2026. Re-verify tool specifics against code.claude.com/docs as features evolve.*
+*GK-Stack v1.1 — compiled July 2026. Re-verify tool specifics against code.claude.com/docs as features evolve.*

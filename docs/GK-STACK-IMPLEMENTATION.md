@@ -65,7 +65,7 @@ claude --version                           # Sonnet 5 needs v2.1.197+, Opus 4.8 
 
 Then run `claude` in any folder and complete login. (Other install methods: code.claude.com/docs.)
 
-**Step 2 — Drop in the starter kit.** Unzip `gk-stack-starter.zip` into your repo root so you have `CLAUDE.md` and `.claude/` at the top level.
+**Step 2 — Drop in the starter kit.** Copy the contents of this repo's `starter/` folder into your repo root so you have `CLAUDE.md` and `.claude/` at the top level.
 
 **Step 3 — Let the agent fill its own grounding file.** *Model: Sonnet — this is exploration + summarization, not architecture.* From the repo root, run `claude` and paste:
 
@@ -255,4 +255,4 @@ by severity. You may not merge, deploy, delete, or push to main.
 
 You know GK-Stack is running when: every non-trivial task starts in plan mode and one-shots more often than not · CLAUDE.md's Learned Rules grows weekly and old mistakes stopped recurring · `/ship` has blocked at least one bad commit · your Opus spend concentrates in planning/debugging while Sonnet does the volume · and reviewing agent PRs feels like tech-leading, not typing.
 
-*Companion files: GK-STACK.md (the why) · gk-stack-starter.zip (the files) · GK-STACK-PRD.md (hand it to Claude Code and it implements all of this). Verify tool behavior at code.claude.com/docs as versions move.*
+*Companion files: GK-STACK.md (the why) · starter/ (the files) · GK-STACK-PRD.md (hand it to Claude Code and it implements all of this). Verify tool behavior at code.claude.com/docs as versions move.*

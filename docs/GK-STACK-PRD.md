@@ -3,7 +3,7 @@
 
 **Version:** 1.1 · July 2026 · Status: Ready for implementation (v1.1 adds skill-library integration R15 and large-codebase requirements R16–R18)
 **Implementer:** Claude Code (supervised by a human tech lead)
-**Companions:** GK-STACK.md (method) · GK-STACK-IMPLEMENTATION.md (manual walkthrough) · gk-stack-starter.zip (file templates)
+**Companions:** GK-STACK.md (method) · GK-STACK-IMPLEMENTATION.md (manual walkthrough) · starter/ (file templates)
 
 ---
 
