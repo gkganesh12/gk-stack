@@ -746,7 +746,7 @@ def generate_html(sessions, m, project_name, generated_at):
     <div style="margin-top:4px">Regenerate any time &nbsp;·&nbsp; Precise mode: <span class="cmd">cost: [paste /cost output]</span></div>
   </div>
   <div style="text-align:right">
-    <div>gk-ledger v1.1 &nbsp;·&nbsp; BetaCraft</div>
+    <div>gk-ledger v1.1</div>
     <div>Generated {generated_at}</div>
     <div style="color:#7a88aa">gk/cost/history.json &nbsp;·&nbsp; {m['n_sessions']} sessions</div>
   </div>

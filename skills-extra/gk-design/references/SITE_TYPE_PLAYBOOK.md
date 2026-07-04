@@ -95,7 +95,7 @@ Labels/meta: JetBrains Mono 12px, weight 500, tracking 0.08em, uppercase
 
 ---
 
-## Site type 2 — Agency / Studio / BetaCraft type
+## Site type 2 — Agency / Studio type
 
 **The direction — bold, opinionated, proves expertise through design:**
 This site IS the product demonstration.
