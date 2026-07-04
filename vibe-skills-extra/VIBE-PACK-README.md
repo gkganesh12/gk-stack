@@ -623,4 +623,4 @@ If this framework has been useful to you, give Aakash a follow — [@aakashdhar]
 
 ## License
 
-MIT — use freely, attribution appreciated.
+MIT — use freely, attribution appreciated. Full text in the [LICENSE](../LICENSE) file at the repo root (covers the whole GK-Stack bundle, this pack included).
