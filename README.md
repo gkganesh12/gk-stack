@@ -44,6 +44,7 @@ Tool-agnostic version: [docs/GK-PRINCIPLES.md](docs/GK-PRINCIPLES.md)
 | **Fix a specific pain right now** | [skills-library/](skills-library/README.md) — the pain → driver table |
 | **Stop burning your token budget** | [docs/token-efficient-vibe-coding.md](docs/token-efficient-vibe-coding.md) |
 | **Roll it out to a team** | [docs/GK-STACK-IMPLEMENTATION.md](docs/GK-STACK-IMPLEMENTATION.md) — model routing, 4-week ladder, loops |
+| **Browse all 29 drivers / what's next** | [skills-extra/README.md](skills-extra/README.md) (index by SDLC stage) · [SKILLS-ROADMAP.md](docs/SKILLS-ROADMAP.md) |
 
 ## Your first hour
 
