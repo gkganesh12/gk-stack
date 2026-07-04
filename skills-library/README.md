@@ -16,6 +16,7 @@ whole reason this library is separate from the starter spine.
 | "What did this change actually affect?" | `gk-test` | Blast-radius-aware test generation across everything the change touches |
 | "It's slow and I don't know where" | `gk-perf` | Full-stack performance audit with tracked scores across runs |
 | "The app won't even start" | `gk-doctor` | Environment health check with safe auto-remediation |
+| "This change has to land in 2,000 files" | `gk-migrate` | Gated migration campaigns: plan → 3-file pilot → headless batch → one rollup PR (PRD R16) |
 
 ## Install (per skill, 10 seconds)
 
@@ -33,5 +34,5 @@ Or user-wide: `cp -r skills-library/<skill-name> ~/.claude/skills/`. Restart Cla
    CLAUDE.md stays the ≤200-line front door that points to it — conventions are
    never duplicated across both.
 
-The remaining 19 gk-* skills (brainstorm, architect, e2e, deploy, handoff, …)
-live in `skills-extra/` — same install pattern, same rules.
+The remaining 21 gk-* skills (brainstorm, architect, e2e, deploy, release,
+incident, handoff, …) live in `skills-extra/` — same install pattern, same rules.

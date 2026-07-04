@@ -44,14 +44,14 @@ gk-stack/
 ├── starter/                           # THE SPINE — copy into any repo root
 │   └── CLAUDE.md · settings.json · /ship · /triage · gk-reviewer (the only always-on skill)
 ├── examples/hono/                     # THE PROOF — Phase 1 executed on a real repo
-├── skills-library/                    # THE DRIVERS — curated 7, install per pain
+├── skills-library/                    # THE DRIVERS — curated 8, install per pain
 │   └── README.md                      #   "install when you hit this pain" table
-└── skills-extra/                 # the remaining 19 drivers, same rules
+└── skills-extra/                      # the remaining 21 drivers, same rules
 ```
 
 The starter deliberately ships **one** always-on skill. Skill descriptions load into
 every session's context; a stack whose C-layer is "context is a budget" doesn't
-preinstall 26 of them. When a pain shows up — legacy onboarding, oversized context,
+preinstall 29 of them. When a pain shows up — legacy onboarding, oversized context,
 parallel work — [pull the matching driver](skills-library/README.md).
 
 ## Two rules that keep it coherent
