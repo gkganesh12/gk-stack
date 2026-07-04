@@ -1,17 +1,11 @@
 ---
 name: vibe-architect
-description: >
-  Architecture planning workflow for establishing code structure, patterns, and principles
-  before any code is written. Runs after brainstorm: and before new: on every project.
-  Triggers on "architect:" prefix, "plan the architecture", "architect this",
-  "how should we structure this", "what patterns should we use".
-  Always runs on every project — no exceptions, no shortcuts.
-  Reads BRIEF.md stack decisions and confirms them explicitly before asking any questions —
-  prevents scaffolding with wrong framework (e.g. Next.js when React+Vite is specified).
-  Produces ARCHITECTURE.md from canonical template — structurally consistent so
-  review:, fix-bug:, and add-feature: can parse it reliably every session.
-  review: uses ARCHITECTURE.md as its primary reference for drift detection.
-  Handles gracefully if BRIEF.md is missing. Detects existing ARCHITECTURE.md before overwriting.
+description: >-
+  Architecture planning workflow that establishes code structure, patterns, and
+  principles in ARCHITECTURE.md before any code is written. Runs on every
+  project — after brainstorm: and before new:, no exceptions. Triggers on
+  "architect:" prefix, "plan the architecture", "architect this", "how should
+  we structure this", "what patterns should we use".
 ---
 
 # Vibe Architect Skill
@@ -213,6 +207,8 @@ Wait for confirmation.
 ## Step 6 — Generate ARCHITECTURE.md
 
 Read `references/ARCHITECTURE_MD.md` for the full canonical template.
+The canonical template keeps ARCHITECTURE.md structurally consistent so
+`review:`, `fix-bug:`, and `add-feature:` can parse it reliably every session.
 
 Generate ARCHITECTURE.md by filling every section of the template:
 - **Project type section:** Copy stack from BRIEF.md verbatim. Include the

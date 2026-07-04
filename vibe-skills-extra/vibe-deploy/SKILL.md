@@ -1,18 +1,11 @@
 ---
 name: vibe-deploy
-description: >
-  Prepares a vibe-* project for deployment to 7 platforms: Railway, Render,
-  Fly.io, Heroku, Vercel, Netlify, GitHub Pages. Detects stack automatically
-  (FastAPI, Express, Next.js, Django, React, Vue, static). Patches source
-  files (port binding to $PORT, adds /health endpoint, production CORS).
-  Generates platform config files scoped per service — backend, web, worker.
-  Inlines non-secret env vars directly in config files per service. Links
-  database connections using platform-native syntax. Generates ENV_SETUP.md
-  with per-service CLI commands for secrets only. Handles background workers
-  and cron services if the project requires them. Optionally generates GitHub
-  Actions CI/CD workflow. Produces DEPLOY.md step-by-step checklist.
-  Triggers: deploy: railway, deploy: render, deploy: fly, deploy: heroku,
-  deploy: vercel, deploy: netlify, deploy: github-pages.
+description: >-
+  Prepares a vibe-* project for deployment — detects the stack, patches source
+  files for production, and generates platform configs, ENV_SETUP.md, and a
+  DEPLOY.md checklist. Triggers on "deploy: railway", "deploy: render",
+  "deploy: fly", "deploy: heroku", "deploy: vercel", "deploy: netlify",
+  "deploy: github-pages".
 ---
 
 # Vibe Deploy Skill

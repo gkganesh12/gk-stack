@@ -1,15 +1,12 @@
 ---
 name: vibe-review
-description: >
-  Evidence-based code review skill — mandatory gate after every phase completes.
-  Triggers on "review:" prefix, "review the code", "code review", "audit the codebase",
-  "check code quality", "review phase N", "is the code ready", "quality check".
-  Mandatory gate: Phase N cannot proceed to Phase N+1 without review passing with no P0 issues.
-  Final phase review blocks deploy until all P0 and P1 issues are resolved.
-  Acts as Senior Engineer, Architect, and Code Quality Auditor.
-  Gracefully handles missing ARCHITECTURE.md — reviews against PLAN.md patterns instead.
-  Automated checks adapt to project stack (not npm-only).
-  Every finding backed by file path and line number. No vague feedback.
+description: >-
+  Evidence-based code review for vibe-* projects — the mandatory quality
+  gate after every phase, with every finding backed by file path and line
+  number. Use when a phase completes or the user asks for a code quality
+  audit. Triggers on "review:" prefix, "review the code", "code review",
+  "audit the codebase", "check code quality", "review phase N",
+  "is the code ready", "quality check".
 ---
 
 # Vibe Review Skill

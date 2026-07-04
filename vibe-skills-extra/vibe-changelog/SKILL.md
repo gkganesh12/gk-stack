@@ -1,17 +1,10 @@
 ---
 name: vibe-changelog
-description: >
-  Generates and maintains two changelog files from git tags, TASKS.md,
-  DECISIONS.md, and feature folders. CHANGELOG.md at repo root is
-  developer-facing in Keep a Changelog format with task IDs and decisions.
-  CHANGELOG_CLIENT.md is plain English, grouped by "what you can now do",
-  written like a product update — no task IDs or framework names. Version
-  detection reads git tags first, then package.json or pyproject.toml.
-  Appending uses git log [last-tag]..HEAD — never date-based. Groups
-  completed tasks into higher-level entries rather than one line per task.
-  If no git tags exist, generates as [Unreleased] and prompts to tag.
-  Triggers: "changelog:" to generate or update both files,
-  "changelog: since v1.0" to generate entries since a specific tag.
+description: >-
+  Generates and maintains two changelogs from actual project history — a
+  developer-facing CHANGELOG.md and a plain-English CHANGELOG_CLIENT.md for
+  client stakeholders. Triggers on "changelog:" to generate or update both
+  files, "changelog: since v1.0" to generate entries since a specific tag.
 ---
 
 # Vibe Changelog Skill

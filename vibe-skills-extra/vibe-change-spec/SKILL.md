@@ -1,13 +1,12 @@
 ---
 name: vibe-change-spec
-description: >
-  Scope change workflow for modifying, adding, or removing requirements at any point during a build.
-  Triggers on "change:" prefix, "I forgot to add", "actually I also want", "can we add",
+description: >-
+  Scope change workflow for adding, removing, modifying, renaming, backlogging,
+  or reverting requirements at any point during a build — assesses impact
+  first, then updates all affected docs in the correct order. Triggers on
+  "change:" prefix, "I forgot to add", "actually I also want", "can we add",
   "remove X from scope", "I changed my mind about", "before we continue add",
   "one more thing", "I want to change the spec", "revert the X change".
-  Handles new additions, removals, renames, backlog operations, and reverting previous changes.
-  Assesses impact before touching any file. Updates all affected docs in the correct order.
-  If BRIEF.md doesn't exist, updates SPEC.md and DECISIONS.md only.
 ---
 
 # Vibe Change Spec Skill

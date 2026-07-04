@@ -1,17 +1,14 @@
 ---
 name: vibe-mode
-description: >
-  Sets the execution mode for the vibe-* framework — manual or autonomous.
-  In manual mode: waits for "next" between tasks, waits for "review:" after phases.
-  In autonomous mode: executes all tasks automatically, uses subagents for
-  independent tasks in parallel, auto-runs review after each phase, only stops
-  on P0 findings or deploy gates.
-  Triggers on "vibe-mode: autonomous", "vibe-mode: manual", "vibe-mode: status",
-  "set autonomous mode", "set manual mode", "switch to autonomous",
-  "turn on autonomous", "turn off autonomous", "what mode am I in".
-  Always use when the user wants to control how much the framework
-  runs automatically vs waits for human input.
-  Writes VIBE_MODE to CLAUDE.md. All vibe-* skills read this on startup.
+description: >-
+  Sets and persists the execution mode (manual or autonomous) for the
+  entire vibe-* framework by writing VIBE_MODE to CLAUDE.md, which all
+  vibe-* skills read on startup. Use whenever the user wants to control
+  how much the framework runs automatically vs waits for human input.
+  Triggers on "vibe-mode: autonomous", "vibe-mode: manual",
+  "vibe-mode: status", "set autonomous mode", "set manual mode",
+  "switch to autonomous", "turn on autonomous", "turn off autonomous",
+  "what mode am I in".
 ---
 
 # Vibe Mode Skill

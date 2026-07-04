@@ -1,19 +1,15 @@
 ---
 name: vibe-init
-description: >
-  Onboards an existing or legacy codebase into the vibe-* skills framework.
-  Reads actual source files, infers architecture and patterns, generates the full vibe/ folder
-  so vibe-add-feature, vibe-fix-bug, vibe-review, and all vibe-* skills work immediately.
-  Triggers on "vibe-init", "onboard this project", "init the vibe folder",
-  "set up vibe for this project", "this is a legacy project", "retrofit this codebase",
-  "I want to use vibe skills on an existing project", "add vibe to this repo",
-  "the vibe folder doesn't exist", "can we use vibe skills here".
-  Always use when the user has an existing codebase with no vibe/ folder and wants
-  to use any vibe-* skill — even without the exact trigger phrases.
-  Single agent session — reads everything, generates everything, no staged checkpoints.
-  Produces CLAUDE.md and full vibe/ folder grounded in actual code.
-  SPEC.md marked PROVISIONAL — verify before first vibe-review run.
-  DECISIONS.md starts from today — all prior decisions untracked by design.
+description: >-
+  Onboards an existing or legacy codebase into the vibe-* skills framework by
+  reading actual source files and generating the CLAUDE.md and full vibe/
+  folder that all vibe-* skills need. Use whenever the user has an existing
+  codebase with no vibe/ folder and wants any vibe-* skill — even without the
+  exact trigger phrases. Triggers on "vibe-init", "onboard this project",
+  "init the vibe folder", "set up vibe for this project", "this is a legacy
+  project", "retrofit this codebase", "I want to use vibe skills on an
+  existing project", "add vibe to this repo", "the vibe folder doesn't
+  exist", "can we use vibe skills here".
 ---
 
 # Vibe Init Skill

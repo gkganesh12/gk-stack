@@ -1,17 +1,12 @@
 ---
 name: vibe-doctor
-description: >
-  Environment health check and auto-remediation for vibe-* projects.
-  Checks node_modules vs package.json drift, nested .git directories,
-  Tailwind and shadcn version mismatches, dotenv load order, Vite HMR
-  WebSocket config, husky hook permissions, ESLint config validity,
-  TypeScript path resolution, and missing dependencies in generated code.
-  Auto-remediates where safe. Flags where human action is needed.
-  Outputs a health report and writes vibe/.doctor-last-run for vibe-progress.
-  Triggers on "doctor:", "check environment", "fix my environment",
-  "env check", "why won't my app start", "something is broken at startup",
-  "app won't start". Also invoked by vibe-fix-bug when an environment
-  bug is detected in triage. Run manually or via PreToolUse hook.
+description: >-
+  Environment health check with safe auto-remediation for vibe-* projects —
+  produces a health report and flags what needs human action. Triggers on
+  "doctor:", "check environment", "fix my environment", "env check",
+  "why won't my app start", "something is broken at startup", "app won't
+  start"; also invoked by vibe-fix-bug when an environment bug is detected
+  in triage.
 ---
 
 # Vibe Doctor Skill
@@ -33,6 +28,7 @@ spends 20 minutes fixing config → never gets to the actual work.
 These failures are all checkable in 30 seconds:
 - node_modules missing or stale (package.json changed since last install)
 - Tailwind v3 project running v4 syntax from generated code
+- shadcn components generated against a mismatched Tailwind/shadcn version
 - dotenv loaded after code that reads process.env
 - Vite HMR WebSocket not configured for dev server
 - husky hooks not executable (no chmod)

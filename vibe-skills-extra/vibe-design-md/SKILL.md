@@ -1,26 +1,21 @@
 ---
 name: vibe-design-md
-description: >
-  Generates a DESIGN.md file for any website URL or fetches a pre-built one
-  from the awesome-design-md collection (55+ sites). DESIGN.md captures the
-  complete design system of a real product — exact hex/oklch values, font
-  families, spacing scales, shadow formulas, component states, do's and don'ts
-  — in a format vibe-design reads to produce pixel-accurate matching UI.
-  Two modes: fetch a pre-built DESIGN.md from the catalog by site name
-  (instant, exact tokens), or generate one from any URL by reading the site's
-  CSS and visual language (works on any site, ~2 min).
-  Output always saved to project root as DESIGN.md.
+description: >-
+  Captures a real website's design system into a DESIGN.md file at the project
+  root — fetched pre-built from the awesome-design-md catalog or generated
+  from any URL — so vibe-design can produce pixel-accurate matching UI.
   Triggers on "design-md:", "generate a design system for", "extract design
   tokens from", "make it look like [brand]", "get the design system for",
-  "fetch DESIGN.md for", "create DESIGN.md from".
-  After output: vibe-design reads DESIGN.md automatically in Step 2.
+  "fetch DESIGN.md for", "create DESIGN.md from"; after output, vibe-design
+  reads DESIGN.md automatically.
 ---
 
 # Vibe Design MD Skill
 
 Captures the visual language of any real website into a DESIGN.md file.
-vibe-design reads this file at session start to produce UI that matches
-the target product's aesthetic — exact tokens, not approximations.
+vibe-design reads this file automatically at session start (in its Step 2)
+to produce UI that matches the target product's aesthetic — exact tokens,
+not approximations.
 
 Two modes. Same output. Always `DESIGN.md` in the project root.
 
@@ -29,7 +24,7 @@ Two modes. Same output. Always `DESIGN.md` in the project root.
 ## Mode A — Catalog fetch (instant)
 
 **When:** User names a site that exists in the catalog
-**How:** Download the pre-built DESIGN.md from awesome-design-md
+**How:** Download the pre-built DESIGN.md from the awesome-design-md collection (55+ sites)
 **Accuracy:** High — tokens extracted directly from real CSS
 **Time:** ~5 seconds
 

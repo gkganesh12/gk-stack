@@ -1,18 +1,14 @@
 ---
 name: vibe-agent
-description: >
-  Standalone agentic architecture skill. Designs complete multi-agent AI systems
-  from scratch — no other vibe-* skills required. Deep knowledge of LangGraph,
-  LangChain, CrewAI, AutoGen, Vercel AI SDK, and custom implementations.
-  Produces AGENT_ARCH.md covering pattern selection, agent roles, tool mapping,
-  state design, HITL checkpoints, VerifierAgent rubrics, implementation order,
-  stack recommendations, and boilerplate folder structure. Generates both an
-  interactive inline topology diagram and an exportable static SVG.
-  Triggers on "agent:" prefix, "design an agent system", "I want to build an agent",
-  "multi-agent pipeline", "orchestrator and sub-agents", "agentic workflow",
-  "which agent framework should I use", "how do I structure my agents",
-  "build a workflow with AI agents", "human in the loop", "LangGraph architecture".
-  Always use when designing any system involving AI agents — standalone, no dependencies.
+description: >-
+  Standalone agentic architecture skill that designs complete multi-agent AI
+  systems from scratch, producing AGENT_ARCH.md plus topology diagrams — no
+  other vibe-* skills required. Use when designing any system involving AI
+  agents. Triggers on "agent:" prefix, "design an agent system", "I want to
+  build an agent", "multi-agent pipeline", "orchestrator and sub-agents",
+  "agentic workflow", "which agent framework should I use", "how do I structure
+  my agents", "build a workflow with AI agents", "human in the loop",
+  "LangGraph architecture".
 ---
 
 # Vibe Agent — Standalone Agentic Architecture Skill

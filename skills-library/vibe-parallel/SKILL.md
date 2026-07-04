@@ -1,19 +1,13 @@
 ---
 name: vibe-parallel
-description: >
-  Parallel task execution using Claude Code subagents. Reads task files,
-  builds dependency waves, detects file conflicts AND read-write conflicts,
-  and spawns tasks as parallel subagents. Size-aware wave splitting unlocks
-  downstream tasks early when large tasks are in the same wave as small ones.
-  If vibe-graph is installed, each subagent gets a targeted context slice
-  instead of full CODEBASE.md — 60-70% cheaper per subagent on large projects.
-  Structured subagent reporting with [x]/[~]/[!] states. Diagnostic retry on
-  failure. Live wave progress log at vibe/parallel/. Post-wave graph update.
-  Wave cost annotation for vibe-cost. Triggers on "parallel:" prefix,
-  "run tasks in parallel", "spawn subagents", "parallelise the build",
-  "which tasks can run in parallel", "run independent tasks simultaneously".
-  Called automatically by vibe-add-feature, vibe-fix-bug, vibe-new-app
-  when VIBE_MODE=autonomous or parallel tasks exist and user approves.
+description: >-
+  Executes independent tasks from vibe-* task files as parallel Claude Code
+  subagents, organised into conflict-free dependency waves. Triggers on
+  "parallel:" prefix, "run tasks in parallel", "spawn subagents",
+  "parallelise the build", "which tasks can run in parallel", "run
+  independent tasks simultaneously"; called automatically by
+  vibe-add-feature, vibe-fix-bug, vibe-new-app when VIBE_MODE=autonomous
+  or parallel tasks exist and user approves.
 ---
 
 # Vibe Parallel Skill v2

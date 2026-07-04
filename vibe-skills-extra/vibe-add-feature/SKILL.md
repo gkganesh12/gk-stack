@@ -1,17 +1,10 @@
 ---
 name: vibe-add-feature
-description: >
-  Full spec-driven workflow for adding a feature to an existing codebase with an AI coding agent.
-  Triggers on "feature:" prefix, "I want to add a feature", "add X to my project",
-  "new feature", "build a feature for".
-  Always use when adding functionality to an existing project — even without the exact prefix.
-  Reads PLAN.md feature map before drafting — checks build order, dependencies, shared data.
-  Stops and surfaces clearly if dependencies are not yet met. Marks unplanned features explicitly.
-  Updates PLAN.md feature map after planning so it stays the live source of truth.
-  Creates vibe/features/[date-slug]/ with FEATURE_SPEC.md, FEATURE_PLAN.md, FEATURE_TASKS.md.
-  Checks for existing incomplete feature with same name before creating a duplicate.
-  Reads SPEC.md before drafting to align with existing acceptance criteria.
-  Updates TASKS.md (human progress view) and agent files.
+description: >-
+  Full spec-driven workflow for adding a feature to an existing codebase with an
+  AI coding agent. Use whenever adding functionality to an existing project —
+  even without the exact prefix. Triggers on "feature:" prefix, "I want to add
+  a feature", "add X to my project", "new feature", "build a feature for".
 ---
 
 # Vibe Add Feature Skill

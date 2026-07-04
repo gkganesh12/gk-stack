@@ -1,18 +1,14 @@
 ---
 name: vibe-perf
-description: >
-  Full-stack performance audit for vibe-* projects — frontend, backend,
-  agentic pipelines, and infrastructure. Measures, scores, compares against
-  previous runs, and writes approved fixes automatically.
-  Triggers on "perf:" prefix, "performance audit", "this is slow",
-  "optimize performance", "Lighthouse score", "bundle size",
-  "slow queries", "LLM latency", "token usage", "memory leak",
-  "CPU usage", "cold start", "perf regression".
-  Runs automatically after vibe-review flags performance as P1/P2,
-  and as a mandatory gate before vibe-deploy.
-  Always use when performance is in question — even without the exact prefix.
-  Shows fix plan by category, waits for human approval, then writes all fixes.
-  Tracks scores over time and compares against previous perf: runs.
+description: >-
+  Full-stack performance audit for vibe-* projects — measures and scores
+  frontend, backend, agentic, and infrastructure layers, then writes
+  approved fixes. Always use when performance is in question — even without
+  the exact prefix. Triggers on "perf:" prefix, "performance audit", "this
+  is slow", "optimize performance", "Lighthouse score", "bundle size",
+  "slow queries", "LLM latency", "token usage", "memory leak", "CPU usage",
+  "cold start", "perf regression"; runs automatically after vibe-review
+  flags performance as P1/P2 and as a mandatory gate before vibe-deploy.
 ---
 
 # Vibe Perf Skill

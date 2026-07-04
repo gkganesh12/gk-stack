@@ -1,17 +1,13 @@
 ---
 name: vibe-test
-description: >
-  Blast-radius-aware test generation for vibe-* projects.
-  Traces every file a change touches, maps the full dependency graph,
-  and writes complete test coverage across the entire blast radius —
-  component tests, integration tests, and E2E tests.
-  Extends existing tests in-place. Writes from scratch where none exist.
+description: >-
+  Blast-radius-aware test generation for vibe-* projects — traces everything
+  a change could affect and writes full coverage across it. Always use when
+  any code has changed and test coverage must be verified or created.
   Triggers on "test:" prefix, "write tests for", "test this feature",
   "add test coverage", "what needs testing", "test the blast radius",
-  "coverage is missing", "write regression tests".
-  Runs automatically at the end of vibe-add-feature and vibe-fix-bug sessions.
-  Always use when any code has changed and test coverage must be verified or created.
-  Never skips files. Never assumes untouched means unaffected.
+  "coverage is missing", "write regression tests"; runs automatically at
+  the end of vibe-add-feature and vibe-fix-bug sessions.
 ---
 
 # Vibe Test Skill

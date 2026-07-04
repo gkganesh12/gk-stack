@@ -1,20 +1,13 @@
 ---
 name: vibe-graph
-description: >
-  Dual-layer dependency graph for vibe-* projects. No external packages.
-  DEPENDENCY_GRAPH.json maps file-level relationships with confidence
-  tagging: EXTRACTED (verified from source, confidence 1.0), INFERRED
-  (derived from specs/patterns, 0.6–0.95), AMBIGUOUS (flagged for review).
-  Rationale nodes capture WHY, HACK, DECISION comments from source files —
-  surfaced during bug diagnosis and review to prevent intent drift.
-  God nodes identify highest-coupling files — read first in review,
-  flagged in bug diagnosis, blocked from simultaneous parallel writes.
-  CONCEPT_GRAPH.json maps semantic relationships (features, agents,
-  models, components). graph.html is an interactive visual.
-  Auto-updated via git diff. Queried by vibe-fix-bug, vibe-test,
-  vibe-review, vibe-parallel. Saves 65-70% context tokens.
-  Triggers on "vibe-graph: build", "vibe-graph: update", "vibe-graph: init",
-  "vibe-graph: rebuild", "vibe-graph: query", "vibe-graph: status".
+description: >-
+  Builds and maintains a dual-layer dependency graph (file-level and
+  concept-level) for vibe-* projects so skills can query blast radius and
+  rationale instead of loading full CODEBASE.md. Triggers on
+  "vibe-graph: build", "vibe-graph: update", "vibe-graph: init",
+  "vibe-graph: rebuild", "vibe-graph: query", "vibe-graph: status";
+  queried automatically by vibe-fix-bug, vibe-test, vibe-review,
+  vibe-parallel.
 ---
 
 # Vibe Graph Skill
@@ -23,6 +16,8 @@ Dual-layer dependency graph for vibe-* projects.
 Starts as a spec graph before code exists.
 Grows into a full dependency map as the project is built.
 Updated automatically from git diff — no agent self-reporting.
+No external packages — built entirely from git, grep, and the filesystem.
+Querying the graph instead of loading full CODEBASE.md saves 65-70% context tokens.
 
 Three concepts from graphify integrated throughout:
 1. **Relationship confidence tagging** — EXTRACTED / INFERRED / AMBIGUOUS on every edge
@@ -36,7 +31,9 @@ Three concepts from graphify integrated throughout:
 ### Layer 1 — DEPENDENCY_GRAPH.json (file-level)
 Maps technical relationships between files.
 What imports what. What's tested by what. What route calls what handler.
-Every edge tagged EXTRACTED / INFERRED / AMBIGUOUS with confidence score.
+Every edge tagged with a confidence score: EXTRACTED (verified from source,
+confidence 1.0), INFERRED (derived from specs/patterns, 0.6–0.95),
+AMBIGUOUS (flagged for human review).
 Rationale nodes stored per file — why the file works the way it does.
 Used by: bug diagnosis, blast radius tracing, test generation, parallel safety.
 

@@ -1,16 +1,10 @@
 ---
 name: vibe-e2e
-description: >
-  Generates and runs full end-to-end UI tests using Playwright against a live
-  URL. Auto-installs Playwright and Chromium if not present — isolated in e2e/
-  folder, never pollutes app dependencies. Reads SPEC.md and FEATURES.md to
-  automatically generate test flows covering every critical user journey.
-  Runs tests with video recording on failure and HTML report. Two-device flows
-  (poster + joiner, sender + receiver) use parallel browser contexts. OAuth
-  flows are skipped with clear warnings. Generates a cleanup script that
-  deletes all test data after the suite runs. e2e: regenerate rewrites all
-  tests from current SPEC.md. Triggers: "e2e: https://url" to run against
-  a live URL, "e2e: regenerate" to rewrite tests from spec.
+description: >-
+  Generates and runs full Playwright end-to-end UI tests against a live URL
+  for vibe-* projects, deriving test flows from SPEC.md and FEATURES.md.
+  Triggers on "e2e: https://url" to run against a live URL, "e2e: regenerate"
+  to rewrite tests from spec.
 ---
 
 # Vibe E2E Skill

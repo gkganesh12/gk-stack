@@ -1,18 +1,12 @@
 ---
 name: vibe-cost
-description: >
-  Tracks and reports token usage and dollar cost across every level of a
-  vibe-* project — per task, per session, per feature, per phase, and
-  total project spend. Auto-runs at the end of every session with estimates.
-  When invoked manually with "cost:" accepts pasted Claude Code /cost output
-  for precise numbers. Detects eight waste patterns: CP-01 context overhead,
-  CP-02 repeated reads, CP-03 unstructured output, CP-04 parallel multiplication,
-  CP-05 low cache hit rate, CP-06 oversized planning, CP-07 environment
-  debugging waste (env issues rediscovered each session), CP-08 over-investigation
-  (files read before intent confirmed). Max 4 recommendations per session.
-  Triggers on "cost:", "how much has this cost", "show cost report",
-  "token usage", "what's the spend so far", "is this getting expensive".
-  Also auto-invoked at end of vibe-add-feature, vibe-fix-bug, vibe-new-app, vibe-review.
+description: >-
+  Tracks and reports token usage and dollar cost for a vibe-* project — per
+  task, session, feature, phase, and total spend — and recommends where to
+  spend less. Triggers on "cost:", "how much has this cost", "show cost
+  report", "token usage", "what's the spend so far", "is this getting
+  expensive"; also auto-invoked at the end of vibe-add-feature, vibe-fix-bug,
+  vibe-new-app, and vibe-review.
 ---
 
 # Vibe Cost Skill
@@ -284,6 +278,16 @@ Threshold: if cache hit rate < 20% on sessions > $1 → flag
 Signal: planning tasks (brainstorm/architect/spec) cost more than build tasks
 Cause: too much back-and-forth in planning, context not trimmed between exchanges
 Threshold: planning session > $0.50 → flag for review
+
+**CP-07 — Environment debugging waste**
+Signal: token spend on diagnosing startup/environment problems recurs across sessions
+Cause: env issues rediscovered each session instead of being fixed once
+Check: same environment issue debugged in more than one session → flag and point to vibe-doctor
+
+**CP-08 — Over-investigation**
+Signal: high input-token spend on file reads before any task output is produced
+Cause: files read before intent confirmed
+Check: was the exploration necessary, or could intent have been confirmed with the user first?
 
 ---
 

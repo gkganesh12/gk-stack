@@ -1,12 +1,9 @@
 ---
 name: vibe-progress
-description: >
-  Displays a live ASCII progress dashboard for the current vibe project.
-  Triggers on "/vibe-progress", "progress:", "show progress", "how far along are we".
-  Reads vibe/TASKS.md and git log to render a clean dashboard.
-  Shows overall progress, phase gate status, active work, completed features,
-  active bugs, backlog items, scope decisions, and last git activity.
-  No files are modified. Read-only. Always runs in Plan Mode.
+description: >-
+  Displays a live read-only ASCII progress dashboard for the current vibe
+  project, rendered from vibe/TASKS.md and git history. Triggers on
+  "/vibe-progress", "progress:", "show progress", "how far along are we".
 ---
 
 # Vibe Progress Skill

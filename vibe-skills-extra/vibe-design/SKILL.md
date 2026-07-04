@@ -1,19 +1,13 @@
 ---
 name: vibe-design
-description: >
-  Frontend design workflow that produces non-generic, editorial-quality UI.
-  Immediately invokes the frontend-design skill for aesthetic direction before
-  any code is written. Enforces a written design contract that is re-read before
-  every single component — not once and forgotten. Creates separate files per
-  page and component, never monolithic output. Reads DESIGN.md if present for
-  exact brand tokens. Reads ANTI_GENERIC.md to kill SaaS dashboard defaults.
-  Reads SITE_TYPE_PLAYBOOK.md for site-type-specific vocabulary.
-  Triggers on "design:" prefix, "style this", "make this look better",
-  "redesign this page", "the UI needs work", "can you polish",
-  "do a design pass", "it looks too plain", "it looks generic",
-  "it looks like a saas dashboard", "make separate pages".
-  Always use when the goal is visual — aesthetics, layout, feel, interactions.
-  Never use for logic, data, tests, or spec changes.
+description: >-
+  Frontend design workflow that produces non-generic, editorial-quality UI for
+  vibe projects. Use when the goal is visual — aesthetics, layout, feel,
+  interactions — never for logic, data, tests, or spec changes. Triggers on
+  "design:" prefix, "style this", "make this look better", "redesign this
+  page", "the UI needs work", "can you polish", "do a design pass", "it looks
+  too plain", "it looks generic", "it looks like a saas dashboard", "make
+  separate pages".
 ---
 
 # Vibe Design Skill
@@ -102,8 +96,8 @@ Extract:
 
 This is the most important step. Do not rush it.
 
-Read `references/ANTI_GENERIC.md` in full.
-Read `references/SITE_TYPE_PLAYBOOK.md` — find the matching site type.
+Read `references/ANTI_GENERIC.md` in full — it exists to kill SaaS dashboard defaults.
+Read `references/SITE_TYPE_PLAYBOOK.md` for site-type-specific vocabulary — find the matching site type.
 
 Then write the design contract. This is a concrete, named document.
 

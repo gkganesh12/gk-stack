@@ -1,18 +1,13 @@
 ---
 name: vibe-spec-review
-description: >
-  Spec quality gate — audits planning documents before any code is written.
-  Automatically triggered by vibe-brainstorm (after BRIEF.md), vibe-agent
-  (after AGENT_ARCH.md), vibe-new-app and vibe-init (after vibe/ folder),
-  and vibe-add-feature (after FEATURE_SPEC.md).
-  Audits all documents that exist: BRIEF.md, AGENT_ARCH.md, SPEC.md,
-  ARCHITECTURE.md, FEATURE_SPEC.md.
-  P0 findings are critical gaps that will cause build failures if not fixed.
-  P1/P2 findings are warnings — user decides whether to fix or continue.
-  Shows findings clearly, waits for user decision, never blocks silently.
+description: >-
+  Spec quality gate that audits all existing planning documents before any
+  code is written, reporting findings and waiting for the user's decision.
+  Use whenever planning documents exist and the build is about to begin.
   Triggers on "spec-review:" prefix, "review the spec", "check the brief",
-  "audit the spec", "is the spec ready", "review before we build".
-  Always use when planning documents exist and build is about to begin.
+  "audit the spec", "is the spec ready", "review before we build"; also
+  invoked automatically by vibe-brainstorm, vibe-agent, vibe-new-app,
+  vibe-init, and vibe-add-feature after they write planning documents.
 ---
 
 # Vibe Spec Review Skill

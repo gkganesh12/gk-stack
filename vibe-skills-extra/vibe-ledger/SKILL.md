@@ -1,17 +1,12 @@
 ---
 name: vibe-ledger
-description: >
-  Generates a full project cost report as a self-contained HTML file from
-  vibe/cost/history.json. Opens automatically in the browser. Tracks spend
-  per session, per task, per phase, and per day. Shows task size breakdown
-  (S/M/L avg costs), session burn with dot indicators, token composition,
-  efficiency metrics, waste pattern advice, and project cost forecast.
-  All plain English — readable by non-technical stakeholders.
-  Triggered automatically at the end of every cost: session.
-  Also triggers on "ledger:", "generate ledger", "show cost report",
-  "open ledger", "cost report", "how much have I spent", "show me the report".
-  Requires vibe/cost/history.json to exist — run cost: first if it doesn't.
-  Zero dependencies — uses Python stdlib only, works on any machine.
+description: >-
+  Generates a self-contained HTML cost report for the current vibe project
+  from vibe/cost/history.json and opens it in the browser — all plain
+  English, readable by non-technical stakeholders. Triggers on "ledger:",
+  "generate ledger", "show cost report", "open ledger", "cost report",
+  "how much have I spent", "show me the report"; also triggered
+  automatically at the end of every cost: session.
 ---
 
 # Vibe Ledger
@@ -19,7 +14,7 @@ description: >
 Generates a visual cost report from your project's cost history.
 Reads `vibe/cost/history.json`. Writes `vibe/cost/ledger/index.html`. Opens in browser.
 
-**No dependencies. No installs. Works on Mac, Linux, and Windows.**
+**No dependencies — Python stdlib only. No installs. Works on Mac, Linux, and Windows.**
 
 ---
 
@@ -77,6 +72,8 @@ After the script runs, tell the user:
 ---
 
 ## What the report shows
+
+Spend is tracked per session, per task, per phase, and per day.
 
 **Header** — project name, total cost, session count, date range, build progress
 

@@ -1,16 +1,12 @@
 ---
 name: vibe-fix-bug
-description: >
-  Full spec-driven workflow for diagnosing and fixing a bug with an AI coding agent.
-  Triggers on "bug:" prefix, "I have a bug", "something is broken", "this is not working",
-  "fix this issue", "there is a bug in", "debug this", "broken", "issue".
-  Always use when the user reports unexpected behaviour — even without the exact prefix.
-  Three-way severity triage: trivial bugs (3 tasks, no folder), environment bugs
-  (runs vibe-doctor first, no BUG_SPEC), significant bugs (full workflow).
-  Environment bugs — HMR loops, missing deps, config mismatches, build tool failures —
-  are detected at triage and routed to vibe-doctor rather than full bug workflow.
-  Diagnosis always before the fix. Regression test always before fix code.
-  BUG_SPEC.md, BUG_PLAN.md, BUG_TASKS.md created for significant bugs only.
+description: >-
+  Full spec-driven workflow for diagnosing and fixing a bug with an AI
+  coding agent. Always use when the user reports unexpected behaviour —
+  even without the exact prefix. Triggers on "bug:" prefix, "I have a bug",
+  "something is broken", "this is not working", "fix this issue", "there is
+  a bug in", "debug this", "broken", "issue"; routes environment bugs to
+  vibe-doctor at triage.
 ---
 
 # Vibe Fix Bug Skill
