@@ -1,0 +1,38 @@
+{
+  "name": "gk-stack",
+  "version": "1.2.0",
+  "description": "The Grounded Knowledge Stack — an operating system for AI-assisted development: 7-layer method, executable PRD, guardrails, and a 29-skill driver library for Claude Code. npx gk-stack init to install the spine.",
+  "bin": {
+    "gk-stack": "bin/gk-stack.js"
+  },
+  "files": [
+    "bin/",
+    "starter/",
+    "skills-library/",
+    "skills-extra/",
+    "docs/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkganesh12/gk-stack.git"
+  },
+  "homepage": "https://github.com/gkganesh12/gk-stack#readme",
+  "keywords": [
+    "claude-code",
+    "claude",
+    "ai-coding",
+    "agentic-engineering",
+    "skills",
+    "claude-md",
+    "developer-workflow",
+    "code-review",
+    "gk-stack"
+  ],
+  "license": "MIT"
+}

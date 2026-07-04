@@ -48,9 +48,14 @@ Tool-agnostic version: [docs/GK-PRINCIPLES.md](docs/GK-PRINCIPLES.md)
 
 ## Your first hour
 
-1. **Copy `starter/` contents** (including `.claude/`) into your repo root. That's the
-   whole spine: a `CLAUDE.md` template, `settings.json` (permissions + format hook +
-   `opusplan`), `/ship`, `/triage`, and exactly one skill — `gk-reviewer`.
+1. **Install the spine** — from your repo root:
+   ```bash
+   npx gk-stack init          # copies CLAUDE.md template + .claude/ into this repo
+   ```
+   (or copy `starter/` contents manually). That's the whole spine: a `CLAUDE.md`
+   template, `settings.json` (permissions + format hook + `opusplan`), `/ship`,
+   `/triage`, and exactly one skill — `gk-reviewer`. Later, when a pain shows up:
+   `npx gk-stack list` · `npx gk-stack add <skill>`.
 2. **Let the agent fill its own grounding file** — the fill-in prompt is in
    [the implementation guide §2](docs/GK-STACK-IMPLEMENTATION.md). Real versions from
    lockfiles, real commands, conventions traceable to code. No inventions.
