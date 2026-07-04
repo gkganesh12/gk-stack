@@ -46,7 +46,7 @@ gk-stack/
 ├── examples/hono/                     # THE PROOF — Phase 1 executed on a real repo
 ├── skills-library/                    # THE DRIVERS — curated 7, install per pain
 │   └── README.md                      #   "install when you hit this pain" table
-└── vibe-skills-extra/                 # the remaining 19 drivers, same rules
+└── skills-extra/                 # the remaining 19 drivers, same rules
 ```
 
 The starter deliberately ships **one** always-on skill. Skill descriptions load into
@@ -56,18 +56,18 @@ parallel work — [pull the matching driver](skills-library/README.md).
 
 ## Two rules that keep it coherent
 
-- **One review gate.** `gk-reviewer` ships active. Prefer `vibe-review`? Swap — never
+- **One review gate.** `gk-reviewer` ships active. Prefer `gk-review`? Swap — never
   run both. Record the choice in CLAUDE.md → Learned Rules. (PRD R15.)
-- **One grounding entry point.** CLAUDE.md stays the ≤200-line front door; the `vibe/`
-  folder vibe-init generates is the deep index it points to.
+- **One grounding entry point.** CLAUDE.md stays the ≤200-line front door; the `gk/`
+  folder gk-init generates is the deep index it points to.
 
 ## One team, whole system
 
-The GK-Stack method **and** the vibe-* driver library are built by the same team —
+The GK-Stack method **and** the gk-* driver library are built by the same team —
 **Ganesh Khetawat & Aakash Dhar** ([BetaCraft](https://betacraft.in)). The method
 wasn't written around someone else's skills, and the skills weren't bolted onto
 someone else's method: the guardrails in the PRD are the same ones the drivers obey.
-Original pack README preserved at [vibe-skills-extra/VIBE-PACK-README.md](vibe-skills-extra/VIBE-PACK-README.md).
+Original pack README preserved at [skills-extra/VIBE-PACK-README.md](skills-extra/VIBE-PACK-README.md).
 
 The method itself is distilled from named sources — Anthropic's published team
 playbook, Claude Code best-practices docs, Boris Cherny's workflow, Simon Willison's

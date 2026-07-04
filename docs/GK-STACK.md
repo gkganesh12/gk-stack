@@ -171,7 +171,7 @@ Copy it into a repo, fill in the placeholders, and you're running the stack in t
 - **Claude Code best practices** — official docs: code.claude.com/docs/en/best-practices
 - **Boris Cherny's workflow thread** (Jan 2, 2026) and coverage: infoq.com/news/2026/01/claude-code-creator-workflow · howborisusesclaudecode.com · paddo.dev/blog/how-boris-uses-claude-code · venturebeat.com (creator-workflow analysis)
 - **Simon Willison's agentic patterns** — validation mechanisms & reference-code prompting (documented across his blog and aiforautomation.io's April 2026 analysis)
-- **Karpathy: vibe coding → agentic engineering** — via Towards Data Science, "From Vibe Coding to Spec-Driven Development" (May 2026)
+- **Karpathy: vibe coding → agentic engineering** — via Towards Data Science, "From GK Coding to Spec-Driven Development" (May 2026)
 - **Community consensus** — r/vibecoding, r/ClaudeAI, Hacker News threads; secure-vibe-coding research (Medium, June 2026); "workflows that actually ship" (DEV, March 2026)
 
 *GK-Stack v1.1 — compiled July 2026. Re-verify tool specifics against code.claude.com/docs as features evolve.*

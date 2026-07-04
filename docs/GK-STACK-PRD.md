@@ -124,15 +124,15 @@ One-invocation wrapper for the learned-rule ritual (prompt P3): append a single 
 Acceptance criteria:
 - [ ] Appends exactly one line per invocation; never edits other sections; rejects prose >1 line
 
-**R15 — Skill library integration (vibe-* driver library, large-codebase set)**
-Install, per observed pain, skills from the first-party vibe-* driver library — bundled in this repo's `skills-library/` (curated seven) and `vibe-skills-extra/` (the rest) — and resolve overlaps with GK-Stack primitives so the two systems don't fight. The starter spine deliberately ships only `gk-reviewer`; drivers are pulled in when their pain shows up, not preinstalled.
-Curated set: `vibe-init` (legacy onboarding — generates grounding docs from observed code only), `vibe-graph` (dependency graph with confidence tags + god nodes; feeds context slicing), `vibe-parallel` (wave-based subagent execution with conflict detection), `vibe-fix-bug`, `vibe-test` (blast-radius-aware), `vibe-perf`, `vibe-doctor`. Optional per team taste: `vibe-brainstorm`, `vibe-architect`, `vibe-document`, `vibe-changelog`.
+**R15 — Skill library integration (gk-* driver library, large-codebase set)**
+Install, per observed pain, skills from the first-party gk-* driver library — bundled in this repo's `skills-library/` (curated seven) and `skills-extra/` (the rest) — and resolve overlaps with GK-Stack primitives so the two systems don't fight. The starter spine deliberately ships only `gk-reviewer`; drivers are pulled in when their pain shows up, not preinstalled.
+Curated set: `gk-init` (legacy onboarding — generates grounding docs from observed code only), `gk-graph` (dependency graph with confidence tags + god nodes; feeds context slicing), `gk-parallel` (wave-based subagent execution with conflict detection), `gk-fix-bug`, `gk-test` (blast-radius-aware), `gk-perf`, `gk-doctor`. Optional per team taste: `gk-brainstorm`, `gk-architect`, `gk-document`, `gk-changelog`.
 Acceptance criteria:
 - [ ] Needed skills copied from `skills-library/` into `.claude/skills/` (or `~/.claude/skills/` per team policy) and listed in CLAUDE.md with one-line "when to use" each
-- [ ] **Exactly one review gate:** either `gk-reviewer` or `vibe-review` is active, not both — the choice and rationale recorded in Learned Rules
-- [ ] **Exactly one grounding authority:** if `vibe-init` generates its `vibe/` folder, CLAUDE.md references it as the deep index and stays the ≤200-line entry point (no duplicated conventions)
+- [ ] **Exactly one review gate:** either `gk-reviewer` or `gk-review` is active, not both — the choice and rationale recorded in Learned Rules
+- [ ] **Exactly one grounding authority:** if `gk-init` generates its `gk/` folder, CLAUDE.md references it as the deep index and stays the ≤200-line entry point (no duplicated conventions)
 - [ ] Trigger-collision pass done: skill descriptions checked so no two skills claim the same trigger phrases; conflicts resolved by editing descriptions
-- [ ] `vibe-mode` autonomous execution, if installed, is subordinated to GK guardrails: R2 permissions and the non-goals (no auto-merge/deploy, security report-only) explicitly override it
+- [ ] `gk-mode` autonomous execution, if installed, is subordinated to GK guardrails: R2 permissions and the non-goals (no auto-merge/deploy, security report-only) explicitly override it
 
 ### Future Considerations (P2) — Phase 3: design for, don't build yet
 
@@ -141,7 +141,7 @@ Acceptance criteria:
 - **R13 — Agent action audit trail:** append-only log location for loop actions + a monthly spend-split review (Opus share vs plan-mode share). *Design note: R7/R8 docs should already state where their run output lands.*
 - **R14 — Multi-repo rollout template:** parameterized version of Phase 1 runnable against a fresh repo.
 - **R16 — Large-scale migration campaign skill (`gk-migrate`):** codifies the plan → 3-file pilot → headless batch (`claude -p` per file, Sonnet/Haiku, scoped tools) → verify → rollup-PR pattern for repo-wide codemods across thousands of files. *Design note: pilot results must gate the batch; per-file failures logged, never retried more than twice.*
-- **R17 — Monorepo grounding hierarchy:** root CLAUDE.md as the ≤200-line entry point + per-package CLAUDE.md files scoped to ownership boundaries (CODEOWNERS-aware); `vibe-graph` runs per package with a cross-package edge index. *Design note: R1 should already write the root file assuming children may exist.*
+- **R17 — Monorepo grounding hierarchy:** root CLAUDE.md as the ≤200-line entry point + per-package CLAUDE.md files scoped to ownership boundaries (CODEOWNERS-aware); `gk-graph` runs per package with a cross-package edge index. *Design note: R1 should already write the root file assuming children may exist.*
 - **R18 — Code-intelligence plugin:** for typed languages at scale, install an LSP/code-intelligence plugin (per official Claude Code best practices) so agents get precise symbol navigation and post-edit error detection instead of grep-based guessing.
 
 ---
